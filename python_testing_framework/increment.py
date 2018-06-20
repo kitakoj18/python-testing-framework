@@ -43,7 +43,7 @@ def inc_dict_objects(data):
     A dictionary with objects as values which have an inc() method.
   """
   for k, v in data.items():
-    v.inc()
+    data[k] = inc(v)
 
 
 def inc_dict_values_from_file(path):
